@@ -109,6 +109,17 @@ window.addEventListener('click', function (event) {
 
 			// Отображение статуса корзины Пустая / Полная
 			toggleCartStatus()
+
+			// Пересчет общей стоимости товаров в корзине (Нужно добавить сдесь чтобы посчитал сумму пустой корзины!!!)
+			calcCartPrice()
 		}
 	}
+
+	// Проверяем клик на + или - в нутри корзины
+	if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
+
+		// Пересчет общей стоимости товаров в корзине
+		calcCartPrice()
+	}
+
 })
