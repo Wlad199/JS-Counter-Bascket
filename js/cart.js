@@ -123,5 +123,9 @@ window.addEventListener('click', function (event) {
 
 		// Сбрасываем счетчик добавленного товара на "1" (после добавления в корзину, у карточки опять 1 (не влияет на кол-во товара в корзине!!!))
 		card.querySelector('[data-counter]').innerText = '1'
+
+
+		// Отображение статуса корзины Пустая / Полная
+		toggleCartStatus()
 	}
 })
