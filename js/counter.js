@@ -111,7 +111,7 @@ window.addEventListener('click', function (event) {
 			toggleCartStatus()
 
 			// Пересчет общей стоимости товаров в корзине (Нужно добавить сдесь чтобы посчитал сумму пустой корзины!!!)
-			calcCartPrice()
+			CartPriceAndDilivery()
 		}
 	}
 
@@ -119,7 +119,7 @@ window.addEventListener('click', function (event) {
 	if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
 
 		// Пересчет общей стоимости товаров в корзине
-		calcCartPrice()
+		CartPriceAndDilivery()
 	}
 
 })
